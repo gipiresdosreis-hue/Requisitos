@@ -5,15 +5,23 @@ public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner (System.in);
 
-        System.out.println("Informe se o estado da conexão do sistema com a célula robótica está habilitado: (S/N) ");
-            String resposta = entrada.nextLine();
+        System.out.println("Informe a quantidade de peças processadas no período da manhã:   ");
+            int pecasManha =0;
+            pecasManha = entrada.nextInt();
 
-            if (resposta.equalsIgnoreCase("S")){
-                System.out.println("O status de comunicação do sistema com o robô está ONLINE" );
+        System.out.println("Informe a quantidade de peças processadas no período da tarde :   ");
+            int pecasTarde =0;
+            pecasTarde = entrada.nextInt();
 
-            } else {
-                System.out.println("O status de comunicação do sistema com o robô está OFFLINE" );
-            }
+        System.out.println("Informe a quantidade de peças processadas no período da noite:   ");
+            int pecasNoite =0;
+            pecasNoite = entrada.nextInt();
+
+            int total =0;
+            total = pecasNoite + pecasManha + pecasTarde;
+
+        System.out.println("O total de peças processadas no dia foi de : " +  total );
+
 
 
         }
