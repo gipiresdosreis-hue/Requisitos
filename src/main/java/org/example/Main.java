@@ -7,7 +7,9 @@ public class Main {
 
         System.out.println("Informe o número da câmera deseja visualizar: ");
         int camera =0;
+
         camera = entrada.nextInt();
+
         System.out.println("Câmera " + camera + " está exibindo o streaming ao vivo");
 
         }
