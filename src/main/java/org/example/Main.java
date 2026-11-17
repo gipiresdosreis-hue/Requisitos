@@ -5,27 +5,29 @@ public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner (System.in);
 
-        System.out.println("Informe se o robô está funcionando corretamente: ");
-        String resposta;
-        resposta = entrada.nextLine();
-        if (resposta.equalsIgnoreCase("Sim")){
-            System.out.println("Qual a porcentagem de funcionamento do robô?");
-            int porcentagem =0;
-            porcentagem = entrada.nextInt();
-            System.out.println("Robô está com um funciomanento de " + porcentagem + "% ");
-        }else{
-            System.out.println("Qual a porcentagem de funcionamento do robô?");
-            int porcentagem2 =0;
+        System.out.println("Informe quantas peças cor vermelha o sistema possui: ");
+        int vermelho =0;
+        vermelho = entrada.nextInt();
+        System.out.println("Informe quantas peças cor azul o sistema possui: ");
+        int azul =0;
+        azul = entrada.nextInt();
+        System.out.println("Informe quantas peças cor verde o sistema possui: ");
+        int verde =0;
+        verde = entrada.nextInt();
+        System.out.println("Criando relatório...");
+        int total =0;
+        total = verde + vermelho + azul;
+        System.out.println("Peças vermelhas: " + vermelho);
+        System.out.println("Peças verdes: " + verde);
+        System.out.println("Peças azuis: " + azul);
+        System.out.println("Total de peças: " + total);
 
-            porcentagem2 = entrada.nextInt();
-
-            System.out.println("Robô está com um funciomanento de " + porcentagem2 + "% ");
 
         }
 
             }
 
-        }
+
 
 
 
