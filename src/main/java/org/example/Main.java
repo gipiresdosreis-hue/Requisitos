@@ -7,34 +7,17 @@ public class Main {
 
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("=== Menu Lateral ===");
+        System.out.println("=== Cabeçalho ===");
+        System.out.println("A instituição que deseja colocar no cabeçalho é SENAI?");
+        String resposta;
+        resposta = entrada.nextLine();
+        if (resposta.equalsIgnoreCase("Sim")){
+            System.out.println("Processando cabeçalho...");
+            System.out.println("Sistema de monitoramento integrado SENAI");
+        } else{
+            System.out.println("Apenas a instituição SENAI é permitido ");
+        }
 
-        int opcao = 0;
-
-        do {
-            System.out.println("1- Painel Geral");
-            System.out.println("2- Perfil e Cadastro");
-            System.out.println("3- Configurações");
-            System.out.println("Selecione uma das opções: ");
-
-            opcao = entrada.nextInt();
-
-            if (opcao == 1) {
-                System.out.println("Painel Geral selecionado");
-
-            } else if (opcao == 2) {
-                System.out.println("Perfil e Cadastro selecionado");
-
-            } else if (opcao == 3) {
-                System.out.println("Configurações selecionadas");
-
-            } else {
-                System.out.println("Opção inválida!");
-            }
-
-        } while (opcao != 3);
-
-        entrada.close();
     }
 }
 
