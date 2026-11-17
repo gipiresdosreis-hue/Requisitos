@@ -5,12 +5,16 @@ public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner (System.in);
 
-        System.out.println("Informe o número da câmera deseja visualizar: ");
-        int camera =0;
+        System.out.println("A câmera está funcionando corretamente?  ");
+        String resposta;
+        resposta = entrada.nextLine();
+        if (resposta.equalsIgnoreCase("Sim")){
+            System.out.println("Câmera está funcionando corretamente e está em processo.");
+        } else {
+            System.out.println("Câmera não está em processamento ");
+        }
 
-        camera = entrada.nextInt();
 
-        System.out.println("Câmera " + camera + " está exibindo o streaming ao vivo");
 
         }
 
