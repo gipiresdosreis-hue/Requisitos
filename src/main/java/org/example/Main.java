@@ -1,31 +1,43 @@
+
 package org.example;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner (System.in);
 
-        System.out.println("Informe quantas peças cor vermelha o sistema possui: ");
-        int vermelho =0;
-        vermelho = entrada.nextInt();
-        System.out.println("Informe quantas peças cor azul o sistema possui: ");
-        int azul =0;
-        azul = entrada.nextInt();
-        System.out.println("Informe quantas peças cor verde o sistema possui: ");
-        int verde =0;
-        verde = entrada.nextInt();
-        System.out.println("Criando relatório...");
-        int total =0;
-        total = verde + vermelho + azul;
-        System.out.println("Peças vermelhas: " + vermelho);
-        System.out.println("Peças verdes: " + verde);
-        System.out.println("Peças azuis: " + azul);
-        System.out.println("Total de peças: " + total);
+        Scanner entrada = new Scanner(System.in);
 
+        System.out.println("=== Menu Lateral ===");
 
-        }
+        int opcao = 0;
 
+        do {
+            System.out.println("1- Painel Geral");
+            System.out.println("2- Perfil e Cadastro");
+            System.out.println("3- Configurações");
+            System.out.println("Selecione uma das opções: ");
+
+            opcao = entrada.nextInt();
+
+            if (opcao == 1) {
+                System.out.println("Painel Geral selecionado");
+
+            } else if (opcao == 2) {
+                System.out.println("Perfil e Cadastro selecionado");
+
+            } else if (opcao == 3) {
+                System.out.println("Configurações selecionadas");
+
+            } else {
+                System.out.println("Opção inválida!");
             }
+
+        } while (opcao != 3);
+
+        entrada.close();
+    }
+}
+
 
 
 
