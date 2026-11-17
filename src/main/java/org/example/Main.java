@@ -16,7 +16,9 @@ public class Main {
         }else{
             System.out.println("Qual a porcentagem de funcionamento do robô?");
             int porcentagem2 =0;
+
             porcentagem2 = entrada.nextInt();
+
             System.out.println("Robô está com um funciomanento de " + porcentagem2 + "% ");
 
         }
