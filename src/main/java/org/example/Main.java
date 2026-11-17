@@ -1,6 +1,7 @@
 
 package org.example;
 
+
 import java.util.Scanner;
 
 public class Main {
@@ -8,45 +9,33 @@ public class Main {
 
         Scanner entrada = new Scanner(System.in);
 
-        int opcao = 0;
-        int notificacoes = 3;
+        System.out.println("Perfil do Usuário");
 
-        do {
-            System.out.println(" BARRA SUPERIOR");
-            System.out.println("Sino (" + notificacoes + " notificações)");
-            System.out.println("1 - Acessar notificações");
-            System.out.println("2 - Sair");
-            System.out.println("Escolha uma opção: ");
+        System.out.println("Informe seu nome: ");
+        String nome = entrada.nextLine();
 
-            opcao = entrada.nextInt();
+        System.out.println("Informe sua idade:");
+        int idade = entrada.nextInt();
 
-            if (opcao == 1) {
+        entrada.nextLine();
 
-                System.out.println("CENTRAL DE NOTIFICAÇÕES ");
+        System.out.println("Perfil cadastrado!");
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
 
-                System.out.println("1 - Novo cadastro realizado");
-                System.out.println("2 - Atualização disponível no sistema");
-                System.out.println("3 - Alerta de segurança");
+        System.out.println("Deseja realizar o logout?");
+        String resposta = entrada.nextLine();
 
-                System.out.println("Notificações visualizadas!");
-
-                notificacoes = 0;
-
-            } else if (opcao == 2) {
-
-                System.out.println("Saindo do sistema...");
-
-            } else {
-
-                System.out.println("Opção inválida!");
-
-            }
-
-        } while (opcao != 2);
+        if (resposta.equalsIgnoreCase("Sim")) {
+            System.out.println("Realizando logout...");
+        } else {
+            System.out.println("Logout não realizado");
+        }
 
         entrada.close();
     }
 }
+
 
 
 
